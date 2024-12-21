@@ -1,0 +1,142 @@
+/* Impostazioni generali */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1; /* Colore chiaro di sfondo */
+    color: #34495e;  /* Colore testo scuro per contrasto */
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #2c3e50;  /* Colore scuro per il titolo */
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+/* Link */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Tabella */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff; /* Colore bianco per la tabella */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #34495e; /* Colore scuro per le intestazioni */
+    color: #fff;  /* Testo chiaro per le intestazioni */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+td {
+    color: #555;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f6f7;
+}
+
+tr:hover {
+    background-color: #dfe6e9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Grafico */
+.chart-container {
+    width: 80%;
+    max-width: 800px;  /* Limita la larghezza del grafico */
+    height: 400px;
+    margin: 40px auto;
+    background-color: #34495e; /* Colore di sfondo scuro per il grafico */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1rem;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #1abc9c;
+    text-decoration: underline;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    .chart-container {
+        width: 95%;
+        height: 300px; /* Altezza del grafico per dispositivi mobili */
+    }
+}
